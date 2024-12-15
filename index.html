@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Sort function of JS</title>
+    </head>
+    <body>
+        <h2>Sort function of JS</h2>
+        <button onclick="ascending_order()">Ascending order</button>
+        <button onclick="descending_order()">Descending order</button>
+        <p id="result"></p>
+        <script>
+            var dog= [20, 59, 7, 1, 10, 94];
+            document.getElementById("result").innerHTML=dog;
+            function ascending_order(){
+                dog.sort(function(a,b){return a-b});
+                document.getElementById("result").innerHTML=dog;
+            }
+            function descending_order(){
+                dog.sort(function(a,b){return b-a});
+                document.getElementById("result").innerHTML=dog;
+            }
+        </script>
+    </body>
+</html>
